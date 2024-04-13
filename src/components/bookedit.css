@@ -1,0 +1,17 @@
+.input1{
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 3px;
+}
+
+.input2{
+    width: 45%;
+    margin: 5px;
+    padding: 2px;
+    color: blue;
+    font-weight: bold;
+    background-color: aqua;
+    box-shadow: 0 2px 5px rgba(52, 17, 0, 0.612);
+    border: 1px solid rgba(108, 108, 108, 0.612);
+}   
