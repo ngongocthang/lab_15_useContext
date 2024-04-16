@@ -2,10 +2,11 @@ import BookCreate from "./components/BookCreate";
 import BookList from "./components/BookList";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./app.css";
+import "./App.css";
 import { fetchBooks, createBook, updateBook, deleteBook } from "./api";
 const App = () => {
     const [books, setBooks] = useState([]);
+    
     const handleDelete = async (id) => {
         const book = await deleteBook(id);
         console.log(book);
@@ -34,7 +35,7 @@ const App = () => {
     return (
         <div className="wrapper">
             <div className="container">
-                <h1 className="text">READING BOOK</h1>
+                <h1 className="text">Reading Book</h1>
                 <div className="window">
                     <BookList books={books} onDelete={handleDelete} onEdit={handleUpdate} />
                 </div>

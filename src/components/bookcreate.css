@@ -17,9 +17,10 @@ body{
     left: 0;
     z-index: 100;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
-.form-create h3 {
+.form-create h2 {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -29,23 +30,32 @@ body{
 
 .form-input1{
     display: flex;
-    width: 30%;
+    width: 98%;
     margin: 0 auto;
     padding: 5px;
-    padding-left: 20px;
     margin-top: 10px;
-    border-radius: 10px;
-    border: 1px solid rgba(91, 0, 0, 0.438);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.612);
+    border: 2px solid gray;
 }
 
 .form-input2{
-    text-align: center;
     padding: 5px;
-    width: 10%;
+    width: 5%;
     margin-top: 5px;
     font-weight: bold;
-    border-radius: 20px;
-    border: 1px solid rgba(91, 0, 0, 0.438);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.612);
+    border-radius: 5px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.form-input2: hover{
+    padding: 5px;
+    width: 5%;
+    margin-top: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color: rgb(138, 125, 255);
+}
+.form-create label {
+    margin-left:30px;
 }

@@ -1,7 +1,10 @@
+.edit-input label {
+    margin-left: 3px;
+}
 .input1{
     display: flex;
-    margin: 10px 0px;
-    width: 100%;
+    margin: 10px 0px 0px 5px;
+    width: 97%;
     padding: 3px;
 }
 
@@ -9,9 +12,18 @@
     width: 45%;
     margin: 5px;
     padding: 2px;
-    color: blue;
+    color: black;
     font-weight: bold;
-    background-color: aqua;
+    box-shadow: 0 2px 5px rgba(52, 17, 0, 0.612);
+    border: 1px solid rgba(108, 108, 108, 0.612);
+}   
+.input3{
+    width: 45%;
+    margin: 5px;
+    padding: 2px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(143, 199, 70);
     box-shadow: 0 2px 5px rgba(52, 17, 0, 0.612);
     border: 1px solid rgba(108, 108, 108, 0.612);
 }   

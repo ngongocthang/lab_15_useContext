@@ -1,0 +1,26 @@
+.item{
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+.image{
+    padding-left:10px;
+    padding-right:10px;
+}
+.button1{
+        background-color:red;
+        margin:5px 5px 5px 220px;
+        width: 13%;
+        font-weight: bold;
+        border-radius:15px;
+    
+}
+
+.button2{
+        background-color:green;
+        margin:5px 5px 5px 5px;
+        width: 13%;
+        font-weight: bold;
+        border-radius:15px;
+    
+}

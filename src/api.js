@@ -4,6 +4,7 @@ const apiURL = process.env.REACT_APP_API_URL;
 export const createBook = async (term) => {
     const resp = await axios.post(`${apiURL}/books`, term);
     return resp.data;
+    console.log(resp.data);
 };
 
 export const fetchBooks = async () => {

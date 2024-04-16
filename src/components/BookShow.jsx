@@ -1,9 +1,14 @@
 import BookEdit from "./BookEdit";
 import { useState } from "react";
+import { FaRegTrashCan } from "react-icons/fa6";
+import { FaPencilAlt } from "react-icons/fa";
+import "./bookShow.css"
+
+
 
 const BookShow = ({ book, onDelete, onEdit }) => {
     console.log(book);
-    const image = `http://picsum.photos/seed/${book.id}/200/300`;
+    const image = `http://picsum.photos/seed/${book.id}/300/200`;
     const [isEdit, setIsEdit] = useState(false);
     const handleEdit = (id, term) => {
         onEdit(id, term);
@@ -11,6 +16,13 @@ const BookShow = ({ book, onDelete, onEdit }) => {
     };
     return (
         <div className='item'>
+             {!isEdit && (
+                <>
+                    <button className="button1" onClick={() => onDelete(book.id)}><FaRegTrashCan /></button>
+                    <button className="button2" onClick={() => setIsEdit(!isEdit)}><FaPencilAlt /></button>
+                </>
+            )}
+             {isEdit && <BookEdit book={book} onEdit={handleEdit} />}
             <div className='image'>
                 <img src={image} alt="" />
             </div>
@@ -20,13 +32,8 @@ const BookShow = ({ book, onDelete, onEdit }) => {
                     <p>{book.des}</p>
                 </>
             )}
-            {isEdit && <BookEdit book={book} onEdit={handleEdit} />}
-            {!isEdit && (
-                <>
-                    <button className="button1" onClick={() => onDelete(book.id)}>DELETE</button>
-                    <button className="button1" onClick={() => setIsEdit(!isEdit)}>EDIT</button>
-                </>
-            )}
+           
+           
         </div>
     );
 };
